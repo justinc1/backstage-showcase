@@ -267,6 +267,7 @@ function getAuthProviderFactory(providerId: string): AuthProviderFactory {
           resolver: providers.saml.resolvers.nameIdMatchingUserEntityName(),
         },
       });
+    #
     default:
       throw new Error(`No auth provider found for ${providerId}`);
   }
